@@ -13,9 +13,9 @@ This is my first plugin, it adds cool new abilities that are toggle on and off w
 You can also do `/supermode toggle [playername]` to toggle for other player.
 Do `/supermode list` to get players that have it enabled.
 ### TODO
-[X] Add permissions
-[X] Add config with protected blocks or affected blocks control
-[X] Rewrite to Kotlin (V2.0)
+- [X] Add permissions
+- [X] Add config with protected blocks or affected blocks control
+- [X] Rewrite to Kotlin (V2.0)
 ### Configuration
 ```yaml
 Punch-Radius: 2
