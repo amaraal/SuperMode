@@ -1,0 +1,9 @@
+#ONLY PUT INTEGERS HERE, this is the range of blocks from the punched block.
+#If 1, the range is a 3x3x3 cube, the middle being the block you punched.
+Punch-Range: 2
+
+#USE THE 1.13 TEXT IDS!
+#Blocks in this list wont be moved by this plugin.
+#Example list with more blocks in the resource page.
+Protected-Blocks:
+  - bedrock
