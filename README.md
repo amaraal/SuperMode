@@ -1,6 +1,7 @@
 # SuperMode
 Minecraft spigot plugin, made in July 2018.
 For archival purposes only
+
 **[This plugin's oficial release](https://www.spigotmc.org/resources/supermode.58766/)**
 ## Original description
 This is my first plugin, it adds cool new abilities that are toggle on and off with the command /supermode toggle
