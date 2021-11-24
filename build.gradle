@@ -1,0 +1,36 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.2.51'
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
+}
+
+group 'com.pearrudas'
+version '2.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/public/' }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile 'org.spigotmc:spigot-api:1.13-R0.1-SNAPSHOT'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+shadowJar {
+    dependencies {
+        //noinspection GroovyAssignabilityCheck
+        include(dependency {
+            it.moduleGroup == 'org.jetbrains.kotlin'
+        })
+    }
+}
+
+build.dependsOn shadowJar
